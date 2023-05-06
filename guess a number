@@ -1,0 +1,15 @@
+#this is a guessing game where you can guess a number computer chooses.
+import random
+a=int(input("Enter a lower limit: "))
+b=int(input("Enter a upper limit: "))
+c=(random.randint(a, b))
+d=int(input('Enter your guess:'))
+while c!=d:
+    print('your guess is incorrect')
+    if c>d:
+         print("the guessed number is smaller than the number")
+    if c<d:
+         print("the guessed number is larger than the number")
+    d=int(input('Enter your guess:'))
+else:
+    print('you got it, your guess is right')
